@@ -13,31 +13,24 @@
 		<script src="assets/js/jquery-1.6.1.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/parallax.js"></script>
+		
+		<script>
+			var page_id = 'contact';
+			$(document).ready(function() {
+				$('#navigationBar').load('navigationBar.html');
+				$('#contactSection').load('contactSection.html');
+				$('#footer').load('footer.html');
+			});
+		</script>
 	</head>
 	
 	<body>
+	
+		<div id="navigationBar"></div>
 		
-		<?php
-			$page_id = "index";
-			include "navigationBar.php";
-		?>
+		<div id="contactSection"></div>
 		
-		<?php
-			include "headerSection.php";
-		?>
-		
-		<?php
-			include "projectsSection.php";
-		?>
-		
-		<?php
-			include "contactSection.php";
-		?>
-		
-		<?php
-			include "footer.php";
-		?>
+		<div id="footer"></div>
 		
 	</body>
-	
 </html>

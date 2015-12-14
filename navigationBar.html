@@ -1,0 +1,25 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="#">Alvian Prasetya</a>
+			<ul class="nav">
+				<script>
+					if (page_id === 'index') {
+						$('#indexButton').attr('class', 'active');
+					} else if (page_id === 'about') {
+						$('#aboutButton').attr('class', 'active');
+					} else if (page_id === 'projects') {
+						$('#projectsButton').attr('class', 'active');
+					} else if (page_id === 'contact') {
+						$('#contactButton').attr('class', 'active');
+					}
+				</script>
+				
+				<li id="indexButton"><a href="index.html">Home</a></li>
+				<li id="aboutButton"><a href="about.html">About</a></li>
+				<li id="projectsButton"><a href="projects.html">Projects</a></li>
+				<li id="contactButton"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
