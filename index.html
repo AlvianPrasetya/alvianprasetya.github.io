@@ -26,7 +26,7 @@
 						   if (target.length) {
 							 $('html,body').animate({
 								 scrollTop: target.offset().top
-							 }, 750, 'swing');
+							 }, 1000, 'swing');
 							return false;
 						}
 					}
@@ -61,7 +61,7 @@
 			<div class="navbar navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
-						<a class="brand" href="#">Alvian Prasetya</a>
+						<a class="brand smoothScroll" href="#header">Alvian Prasetya</a>
 						<ul class="nav">
 							<li id="indexButton" class="active"><a id="indexLink" class="smoothScroll" href="#header">Home</a></li>
 							<li id="aboutButton"><a id="aboutLink" class="smoothScroll" href="#about">About</a></li>
@@ -72,16 +72,29 @@
 				</div>
 			</div>
 			
-			<section id="header" data-speed="8" data-type="background">
+			<section id="parallax" class="header" data-speed="6" data-type="background">
+				<div id="header" class="container">
+					<div class="row-fluid">
+						<div class="span12">
+						</div>
+					</div>
+				</div>
+			
 				<div class="container">
 					<div class="hero-unit text-center">
 						<h2>Alvian Prasetya's Personal Webpage</h2>
 						<p>Tech Entrepreneur - Software Engineer - Artificial Intelligence Enthusiast</p>
 					</div>
 				</div>
-			</section>
-			
-			<section id="about" data-speed="6" data-type="background">
+				
+				
+				<div id="about" class="container">
+					<div class="row-fluid">
+						<div class="span12">
+						</div>
+					</div>
+				</div>
+				
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span12 well text-center">
@@ -90,15 +103,16 @@
 					</div>
 					<div class="row-fluid">
 						<div class="span6 well text-center">
-							<h3>Under Construction</h3>
+							<h3>Background Information</h3>
 							<div class="row-fluid">
 								<div class="span12 well text-left">
-									This div is under construction
+									I am currently a Computer Engineering undergraduate at National University of Singapore.
+									I have always been interested in Artificial Intelligence (potential focus area) and tech start-ups.
 								</div>
 							</div>
 						</div>
 						<div class="span6 well text-center">
-							<h3>Under Construction</h3>
+							<h3>Awards & Achievements</h3>
 							<div class="row-fluid">
 								<div class="span12 well text-left">
 									This div is under construction
@@ -107,9 +121,14 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<section id="projects" data-speed="4" data-type="background">
+				
+				<div id="projects" class="container">
+					<div class="row-fluid">
+						<div class="span12">
+						</div>
+					</div>
+				</div>
+				
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span12 well text-center">
@@ -203,21 +222,28 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<section id="contact" data-speed="2" data-type="background">
+				
+				<div id="contact" class="container">
+					<div class="row-fluid">
+						<div class="span12">
+						</div>
+					</div>
+				</div>
+				
 				<div class="container">
-					<div class="page-header">
-						<h1>Contact Me <small>- For All Queries & Related Stuffs</small></h1>
+					<div class="row-fluid">
+						<div class="span12 well">
+							<h1>Contact Me <small>- For All Queries & Related Stuffs</small></h1>
+						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span4">
+						<div class="span4 well">
 							<h3>My Whereabouts</h3>
 							<p>
 								I am currently residing on Singapore, pursuing my Undergraduate Computer Engineering degree in <a href="http://nus.edu.sg" target="new">National University of Singapore (NUS)</a>. Feel free to drop by and meet me there!
 							</p>
 						</div><!-- /.span4 -->
-						<div class="span4">
+						<div class="span4 well">
 							<h3>Ways to Reach Me</h3>
 							<div class="media">
 								<img class="pull-left media-object" src="http://www.skycreekdharmacenter.org/wp-content/uploads/2015/01/facebook-icon.jpg">
@@ -248,7 +274,7 @@
 								</div>
 							</div>
 						</div><!-- /.span4 -->
-						<div class="span4">
+						<div class="span4 well">
 							<h3>Contact Form</h3>
 							<form class="form" id="frm" action="http://formspree.io/alvian.better@gmail.com" method="POST">
 								<div class="control-group">
@@ -286,7 +312,7 @@
 				</div>
 			</section>
 			
-			<section id="footer" data-speed="2" data-type="background">
+			<section id="footer" data-speed="4" data-type="background">
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span12 text-center">

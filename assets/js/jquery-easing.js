@@ -40,7 +40,7 @@ jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
 {
-	def: 'easeInOutCirc',
+	def: 'easeInOutExpo',
 	swing: function (x, t, b, c, d) {
 		//alert(jQuery.easing.default);
 		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);

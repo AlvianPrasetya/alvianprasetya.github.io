@@ -1,5 +1,5 @@
-#header { 
-	background: url(../images/intro.png) 50% 0 fixed; 
+#parallax { 
+	background: url("../images/parallaxBackground.png") 50% 0 fixed;
 	height: auto;  
 	margin: 0 auto; 
 	width: 100%; 
@@ -8,34 +8,7 @@
 	padding-top: 100px;
 	padding-bottom: 50px;
 }
-#about { 
-	background: url(../images/about.png) 50% 0 fixed; 
-	height: auto;
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative; 
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 100px 0;
-}
-#projects { 
-	background: url(../images/home.jpg) 50% 0 fixed; 
-	height: auto;  
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative; 
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 100px 0;
-}
-#contact { 
-	background: url(../images/about.png) 50% 0 fixed; 
-	height: auto;
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative; 
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 100px 0;
-	color: #fff;
-}
+
 #footer {
 	background-color: #000;
 	height: auto;
@@ -43,8 +16,8 @@
 	width: 100%; 
 	position: relative; 
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 	color: #fff;
 }
 
