@@ -8,6 +8,15 @@
 	padding-top: 100px;
 	padding-bottom: 50px;
 }
+#about { 
+	background: url(../images/about.png) 50% 0 fixed; 
+	height: auto;
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	padding: 100px 0;
+}
 #projects { 
 	background: url(../images/home.jpg) 50% 0 fixed; 
 	height: auto;  
@@ -17,7 +26,7 @@
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	padding: 100px 0;
 }
-#about { 
+#contact { 
 	background: url(../images/about.png) 50% 0 fixed; 
 	height: auto;
 	margin: 0 auto; 
