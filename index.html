@@ -9,8 +9,9 @@
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="assets/css/bootstrap-parallax.min.css" rel="stylesheet" media="screen">
 		<link href="assets/css/parallax.css" rel="stylesheet" media="screen">
+		<link href="assets/css/lightbox.css" rel="stylesheet" media="screen">
 		
-		<script src="assets/js/jquery-1.6.1.min.js"></script>
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/parallax.js"></script>
 		<script src="assets/js/jquery-easing.js"></script>
@@ -105,16 +106,87 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span6 well text-center">
+						<div class="span4 well text-center">
 							<h3>Background Information</h3>
 							<div class="row-fluid">
 								<div class="span12 well text-left">
-									I am currently a Computer Engineering undergraduate at National University of Singapore.
-									I have always been interested in Artificial Intelligence (potential focus area) and tech start-ups.
+									I am currently a year 2 (Sophomore) Computer Engineering undergraduate at National University of Singapore (NUS is currently ranked 12 worldwide based on <a href="http://www.topuniversities.com/university-rankings/world-university-rankings/2015" target="new">QS World Rankings</a>).
+									<hr>
+									My current interests are in the fields of Artificial Intelligence (potential focus area) and technology start-ups.
+									<hr>
+									Currently, I am looking forward to do an internship on the coming Summer 2016, so if you are looking for an internship candidate, feel free to <a class="smoothScroll" href="#contact">contact me</a>.
 								</div>
 							</div>
 						</div>
-						<div class="span6 well text-center">
+						<div class="span4 well text-center">
+							<h3>Skills & Expertise</h3>
+							<div class="row-fluid">
+								<div class="span12 well text-left" style="text-align: left">
+									<a id="work-link" href="javascript:;" data-toggle="collapse" data-target="#work" style="text-decoration: none">(+) My work related skills</a>
+									<script>
+										$('#work-link').click(function() {
+											if ($('#work-link').text() === '(+) My work related skills') {
+												$('#work-link').text('(-) My work related skills');
+											} else {
+												$('#work-link').text('(+) My work related skills');
+											}
+										});
+									</script>
+									<div id="work" class="collapse">
+										<ul style="padding-top: 20px">
+											<li>Software engineering concepts & practices.
+											<li>Full stack Website & Web Apps development (LAMP + JS).
+											<li>Fluency in game programming (Unity3D, HTML5 Canvas).
+											<li>Database design and query languages (MySQL, PostgreSQL).
+											<li>Knowledge of multiple advanced data structures and algorithms.
+											<li>Fluency in multiple Revision Control Systems (Github, Mercurial).
+											<li>Expertise in multiple programming languages (Java, C++, C#, Javascript, PHP).
+											<li>Knowledge in AI and machine learning algorithms (SVM, ANN).
+										</ul>
+									</div>
+									<hr>
+									<a id="other-work-link" href="javascript:;" data-toggle="collapse" data-target="#other-work" style="text-decoration: none">(+) My other work related skills</a>
+									<script>
+										$('#other-work-link').click(function() {
+											if ($('#other-work-link').text() === '(+) My other work related skills') {
+												$('#other-work-link').text('(-) My other work related skills');
+											} else {
+												$('#other-work-link').text('(+) My other work related skills');
+											}
+										});
+									</script>
+									<div id="other-work" class="collapse">
+										<ul style="padding-top: 20px">
+											<li>Hardware programming.
+											<li>FPGA and microcontroller design.
+											<li>Team leadership.
+											<li>Public speaking.
+											<li>Product pitching.
+											</ul>
+									</div>
+									<hr>
+									<a id="non-work-link" href="javascript:;" data-toggle="collapse" data-target="#non-work" style="text-decoration: none">(+) My non-work related skills</a>
+									<script>
+										$('#non-work-link').click(function() {
+											if ($('#non-work-link').text() === '(+) My non-work related skills') {
+												$('#non-work-link').text('(-) My non-work related skills');
+											} else {
+												$('#non-work-link').text('(+) My non-work related skills');
+											}
+										});
+									</script>
+									<div id="non-work" class="collapse">
+										<ul style="padding-top: 20px">
+											<li>Proficiency in multiple languages (English, Indonesian, Chinese).
+											<li>Moderate proficiency in French and German language.
+											<li>Intricate problem solving skills.
+											<li>Piano playing skills (autodidact, play-by-ear).
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="span4 well text-center">
 							<h3>Awards & Achievements</h3>
 							<div class="row-fluid">
 								<div class="span12 well text-left">
@@ -147,7 +219,7 @@
 									<h2><a href="http://friendezvous.herokuapp.com" target="new">Friendezvous (Ongoing)</a></h2>
 									<div class="row-fluid">
 										<div class="span12 well" style="padding: 10px">
-											<img src="assets/images/Friendezvous - Title.png">
+											<a href="assets/images/Friendezvous - Title.png" data-lightbox="friendezvous" data-title="Friendezvous Title Page"><img src="assets/images/Friendezvous - Title.png"></a>
 										</div>
 									</div>
 									<p>
@@ -160,6 +232,11 @@
 							<div class="row-fluid">
 								<div class="span12 well">
 									<h2><a href="http://alvianprasetya.me">AlvianPrasetya.me</a></h2>
+									<div class="row-fluid">
+										<div class="span12 well" style="padding: 10px">
+											<a href="assets/images/AlvianPrasetya.me.png" data-lightbox="alvianPrasetya.me" data-title="AlvianPrasetya.me"><img src="assets/images/AlvianPrasetya.me.png"></a>
+										</div>
+									</div>
 									<p>My very own portfolio website to keep track of the projects I have done. Built with twitter bootstrap and furnished with parallax interface.</p>
 									<p><a class="btn btn-success" href="#projects">View details &raquo;</a></p>
 								</div>
@@ -171,10 +248,10 @@
 									<h2><a href="https://github.com/AlvianPrasetya/TwistedMaze" target="new">TwistedMaze</a></h2>
 									<div class="row-fluid">
 										<div class="span6 well" style="padding: 10px">
-											<img src="assets/images/TwistedMaze - Title.png">
+											<a href="assets/images/TwistedMaze - Title.png" data-lightbox="twistedMaze" data-title="Twisted Maze Title Page"><img src="assets/images/TwistedMaze - Title.png"></a>
 										</div>
 										<div class="span6 well" style="padding: 10px">
-											<img src="assets/images/TwistedMaze - Gameplay.png">
+											<a href="assets/images/TwistedMaze - Gameplay.png" data-lightbox="twistedMaze" data-title="Twisted Maze Gameplay"><img src="assets/images/TwistedMaze - Gameplay.png"></a>
 										</div>
 									</div>
 									<p>A MazeRunner inspired game with periodically rotating segments. Guide your character out of this challenging maze!</p>
@@ -193,10 +270,10 @@
 									<h2>ConTag</h2>
 									<div class="row-fluid">
 										<div class="span6 well" style="padding: 10px">
-											<img src="assets/images/ConTag - Title.png">
+											<a href="assets/images/ConTag - Title.png" data-lightbox="conTag" data-title="ConTag Title Page" rel="lightbox[gallery]"><img src="assets/images/ConTag - Title.png"></a>
 										</div>
 										<div class="span6 well" style="padding: 10px">
-											<img src="assets/images/ConTag - Gameplay.png">
+											<a href="assets/images/ConTag - Gameplay.png" data-lightbox="conTag" data-title="ConTag Gameplay" rel="lightbox[gallery]"><img src="assets/images/ConTag - Gameplay.png"></a>
 										</div>
 									</div>
 									<p>A chase and tag versus game between two players with multiple obstacles and power-ups. Find out who is better in chasing others in this immersive and fun game!</p>
@@ -210,7 +287,7 @@
 									<h2><a href="https://github.com/cs2103aug2015-t10-2j/main" target="new">TaskBoard</a></h2>
 									<div class="row-fluid">
 										<div class="span12 well" style="padding: 10px">
-											<img src="assets/images/TaskBoard - Demo.png">
+											<a href="assets/images/TaskBoard - Demo.png" data-lightbox="taskBoard" data-title="TaskBoard Demo"><img src="assets/images/TaskBoard - Demo.png"></a>
 										</div>
 									</div>
 									<p>A Windows based application that helps you to keep track of your daily tasks. Comes with special features such as customizable themes and support for multiple tasks.</p>
@@ -333,5 +410,14 @@
 				</div>
 			</section>
 			
+			<script src="assets/js/lightbox.js"></script>
+			<script>
+				lightbox.option({
+					'resizeDuration': 500,
+					'wrapAround': false,
+					'alwaysShowNavOnTouchDevices': true,
+					'disableScrolling': true
+				});
+			</script>
 	</body>		
 </html>	
