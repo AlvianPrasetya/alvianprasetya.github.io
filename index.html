@@ -32,28 +32,36 @@
 					}
 				});
 			});
+			
+			$(window).scroll(function() {
+				var windscroll = $(window).scrollTop();
+				if (windscroll >= 100) {
+					$('.nav').addClass('fixed');
+					$('.content').each(function(i) {
+						if ($(this).position().top <= windscroll + 75) {
+							$('.nav li.active').removeClass('active');
+							$('.nav li').eq(i).addClass('active');
+						}
+					});
+				} else {
+					$('.nav').removeClass('fixed');
+					$('.nav li.active').removeClass('active');
+					$('.nav li:first').addClass('active');
+				}
+			}).scroll();
 		</script>
 		
-		<script>
-			$(document).ready(function(){
-				$('#indexLink').click(function() {
-					$('#indexButton').siblings('li').removeClass('active');
-					$('#indexButton').addClass('active');
-				});
-				$('#aboutLink').click(function() {
-					$('#aboutButton').siblings('li').removeClass('active');
-					$('#aboutButton').addClass('active');
-				});
-				$('#projectsLink').click(function() {
-					$('#projectsButton').siblings('li').removeClass('active');
-					$('#projectsButton').addClass('active');
-				});
-				$('#contactLink').click(function() {
-					$('#contactButton').siblings('li').removeClass('active');
-					$('#contactButton').addClass('active');
-				});
-			});
-		</script>
+		<style>
+			a {
+				outline: 0 !important;
+			}
+			.span4 {
+				word-wrap: break-word;
+			}
+			.well {
+				text-align: center;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -61,7 +69,7 @@
 			<div class="navbar navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
-						<a id="indexLink" class="brand smoothScroll" href="#parallax">Alvian Prasetya</a>
+						<a id="homeLink" class="brand smoothScroll" href="#parallax">Alvian Prasetya</a>
 						<ul class="nav">
 							<li id="indexButton" class="active"><a id="indexLink" class="smoothScroll" href="#parallax">Home</a></li>
 							<li id="aboutButton"><a id="aboutLink" class="smoothScroll" href="#about">About</a></li>
@@ -72,8 +80,8 @@
 				</div>
 			</div>
 			
-			<section id="parallax" class="header" data-speed="6" data-type="background">
-				<div class="container">
+			<section id="parallax" class="header" data-speed="4" data-type="background">
+				<div class="container content">
 					<div class="hero-unit text-center">
 						<h2>Alvian Prasetya's Personal Webpage</h2>
 						<p>Tech Entrepreneur - Software Engineer - Artificial Intelligence Enthusiast</p>
@@ -90,7 +98,7 @@
 					</div>
 				</div>
 				
-				<div class="container">
+				<div class="container content">
 					<div class="row-fluid">
 						<div class="span12 well text-center">
 							<h2>About Me</h2>
@@ -126,7 +134,7 @@
 					</div>
 				</div>
 				
-				<div class="container">
+				<div class="container content">
 					<div class="row-fluid">
 						<div class="span12 well text-center">
 							<h2>Projects</h2>
@@ -229,7 +237,7 @@
 					</div>
 				</div>
 				
-				<div class="container">
+				<div class="container content">
 					<div class="row-fluid">
 						<div class="span12 well">
 							<h1>Contact Me <small>- For All Queries & Related Stuffs</small></h1>
@@ -248,28 +256,28 @@
 								<img class="pull-left media-object" src="http://www.skycreekdharmacenter.org/wp-content/uploads/2015/01/facebook-icon.jpg">
 								<div class="media-body">
 									<h4 class="media-heading">Facebook</h4>
-									You can reach me on Facebook <a href="https://www.facebook.com/alvian.prasetya.7" target="new">here</a>.
+									You can connect with me on Facebook <a href="https://www.facebook.com/alvian.prasetya.7" target="new">here</a>.
 								</div>
 							</div>
 							<div class="media">
 								<img class="pull-left media-object" src="https://image.freepik.com/free-vector/twitter-social-network-icon-vector_652139.jpg">
 								<div class="media-body">
 									<h4 class="media-heading">Twitter</h4>
-									Despite my inactivity on Twitter, you can always tweet to <a href="https://twitter.com/alviancrescent" target="new">@AlvianCrescent</a>.
+									Despite my inactivity on Twitter, you can always tweet me at <a href="https://twitter.com/alviancrescent" target="new">@AlvianCrescent</a>.
 								</div>
 							</div>
 							<div class="media">
 								<img class="pull-left media-object" src="https://cdn2.iconfinder.com/data/icons/flurry-for-the-web/512/gmail.png">
 								<div class="media-body">
 									<h4 class="media-heading">Email</h4>
-									You can email me regarding anything at <a href="mailto: alvian.better@gmail.com">alvian.better@gmail.com</a>.
+									You can email me regarding anything at my personal email <a href="mailto: alvian.better@gmail.com">alvian.better@gmail.com</a>.
 								</div>
 							</div>
 							<div class="media">
 								<img class="pull-left media-object" src="http://pointclouds.org/assets/images/about/email-icon.png">
 								<div class="media-body">
 									<h4 class="media-heading">Contact Form</h4>
-									You can drop me a message by simply typing in the contact form.
+									Or, you can drop me a message by simply typing in the contact form.
 								</div>
 							</div>
 						</div><!-- /.span4 -->
