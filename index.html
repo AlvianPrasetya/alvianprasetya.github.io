@@ -22,42 +22,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/parallax.min.js"></script>
 		<script src="assets/js/jquery-easing.min.js"></script>
-		
-		<script>
-			$(function() {
-				$('.smoothScroll').click(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-						|| location.hostname == this.hostname) {
-
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-						   if (target.length) {
-							 $('html,body').animate({
-								 scrollTop: target.offset().top
-							 }, 1000, 'swing');
-							return false;
-						}
-					}
-				});
-			});
-			
-			$(window).scroll(function() {
-				var windscroll = $(window).scrollTop();
-				if (windscroll >= 100) {
-					$('.nav').addClass('fixed');
-					$('.content').each(function(i) {
-						if ($(this).position().top <= windscroll + 75) {
-							$('.nav li.active').removeClass('active');
-							$('.nav li').eq(i).addClass('active');
-						}
-					});
-				} else {
-					$('.nav').removeClass('fixed');
-					$('.nav li.active').removeClass('active');
-					$('.nav li:first').addClass('active');
-				}
-			}).scroll();
-		</script>
+		<script src="assets/js/smoothscroll.min.js"></script>
 		
 		<!-- Google Analytics -->
 		<script>
@@ -365,7 +330,7 @@
 								</div>
 							</div>
 							<div class="media">
-								<img class="pull-left media-object" src="assets/images/gmail-icon.png" alt="Email alvian.better@gmail.com">
+								<img class="pull-left media-object" src="assets/images/gmail-icon.png" alt="Email Alvian">
 								<div class="media-body">
 									<h4 class="media-heading">Email</h4>
 									You can email me regarding anything at my personal email <a href="mailto: alvian.better@gmail.com">here</a>.
